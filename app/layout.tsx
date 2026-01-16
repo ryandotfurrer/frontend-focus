@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Animations Playground",
-  description: "My place to play with and further learn animations on the web.",
+  title: "Frontend Focus",
+  description: "My place to play, tinker, and experiment with all things frontend.",
 };
 
 export default function RootLayout({
@@ -34,7 +34,7 @@ export default function RootLayout({
             <ul className="flex justify-between">
               <div>
                 <li>
-                  <Link href="/">Animations Playground</Link>
+                  <Link href="/">Frontend Focus</Link>
                 </li>
               </div>
               <div className="flex gap-4">
@@ -48,6 +48,9 @@ export default function RootLayout({
             </ul>
           </nav>
           {children}
+          <footer className="py-8 text-sm text-foreground/50 mt-32">
+            <p>Copyright &copy; {new Date().getFullYear()} Frontend Focus. All rights reserved.</p>
+          </footer>
       </body>
     </html>
   );
